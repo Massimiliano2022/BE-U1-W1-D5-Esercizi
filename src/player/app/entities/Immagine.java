@@ -5,9 +5,9 @@ public class Immagine extends ElementoMultimediale implements Showable {
 	private final static int maxLuminosita = 10;
 	private int luminosita;
 
-	public Immagine(String titolo, int luminosita) {
+	public Immagine(String titolo) {
 		super(titolo);
-		this.setLuminosita(luminosita);
+		this.setLuminosita(5);
 	}
 
 	public int getLuminosita() {

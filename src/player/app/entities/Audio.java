@@ -6,9 +6,9 @@ public class Audio extends ElementoMultimediale implements Playable {
 	private int volume;
 	private int durata;
 
-	public Audio(String titolo, int volume, int durata) {
+	public Audio(String titolo, int durata) {
 		super(titolo);
-		this.setVolume(volume);
+		this.setVolume(5);
 		this.setDurata(durata);
 	}
 

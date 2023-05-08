@@ -8,11 +8,11 @@ public class Video extends ElementoMultimediale implements Playable, Showable {
 	private int durata;
 	private int luminosita;
 
-	public Video(String titolo, int volume, int durata, int luminosita) {
+	public Video(String titolo, int durata) {
 		super(titolo);
-		this.setVolume(volume);
 		this.setDurata(durata);
-		this.setLuminosita(luminosita);
+		this.setVolume(5);
+		this.setLuminosita(5);
 	}
 
 	public int getVolume() {
