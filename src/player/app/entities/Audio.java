@@ -1,6 +1,6 @@
 package player.app.entities;
 
-public class Audio extends ElementoMultimediale implements Player {
+public class Audio extends ElementoMultimediale implements Playable {
 
 	private final static int maxVolume = 10;
 	private int volume;
@@ -57,7 +57,7 @@ public class Audio extends ElementoMultimediale implements Player {
 		String riproduzione = "";
 
 		for (int i = 0; i < durata; i++) {
-			riproduzione = getTitolo()+ " ";
+			riproduzione = getTitolo() + " ";
 			for (int j = 0; j < volume; j++) {
 				riproduzione += "!";
 			}
