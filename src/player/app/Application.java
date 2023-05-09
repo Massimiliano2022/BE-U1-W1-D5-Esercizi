@@ -11,7 +11,7 @@ public class Application {
 
 	public static void main(String[] args) {
 
-		int numeroElementi = 5;
+		final int numeroElementi = 5;
 		boolean play = true;
 		boolean aggiungiElementi = true;
 		int i = 0;
@@ -28,7 +28,7 @@ public class Application {
 				System.out.println("2 - Video");
 				System.out.println("3 - Immagine");
 
-				ElementoMultimediale element = creaElementoMultimediale(numeroElementi, scanner, elementi, i);
+				ElementoMultimediale element = creaElementoMultimediale(scanner, elementi, i);
 				if (element != null) {
 					i++;
 				}
@@ -43,8 +43,8 @@ public class Application {
 
 	}
 
-	private static ElementoMultimediale creaElementoMultimediale(int numeroElementi, Scanner scanner,
-			ElementoMultimediale[] elementi, int i) {
+	private static ElementoMultimediale creaElementoMultimediale(Scanner scanner, ElementoMultimediale[] elementi,
+			int i) {
 
 		int inputMenu = scanner.nextInt();
 
